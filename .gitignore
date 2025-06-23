@@ -1,0 +1,96 @@
+# Binarios compilados de Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Archivos específicos de Go
+go.work
+go.work.sum
+
+# Archivos de cobertura de código
+*.cover
+coverage.txt
+coverage.html
+
+# Archivos de entorno (contienen información sensible)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+*.log
+logs/
+
+# Directorios de dependencias (si usas vendoring)
+vendor/
+
+# Archivos temporales del sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Archivos de IDE y editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Archivos de backup
+*.bak
+*.backup
+*.old
+
+# Archivos de configuración local
+config.local.yaml
+config.local.yml
+config.local.json
+
+# Archivos de Docker
+.dockerignore
+
+# Archivos de CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# Archivos de documentación temporal
+docs/temp/
+*.tmp
+
+# Archivos de caché
+.cache/
+*.cache
+
+# Archivos de profiling de Go
+*.prof
+*.pprof
+cpu.prof
+mem.prof
+block.prof
+mutex.prof
+
+# Archivos de debug
+debug/
+
+# Archivos de build
+build/
+dist/
+bin/
+
+# Archivos específicos del proyecto
+ms-validar-recaptcha
+ms-validar-recaptcha.exe
+
+# Archivos de Air (hot reload para desarrollo)
+tmp/ 
