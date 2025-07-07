@@ -24,10 +24,10 @@ func main() {
 	e.Use(middleware.LoggingMiddleware())
 	e.Use(middleware.CORSMiddleware())
 
-	// Rutas
-	e.GET("/", handlers.HealthCheckHandler)
-	e.GET("/health", handlers.HealthCheckHandler)
-	e.POST("/validate-recaptcha", handlers.ValidateRecaptchaHandler)
+	// Rutas con prefix
+	api := e.Group("recaptcha")
+	api.GET("/health", handlers.HealthCheckHandler)
+	api.POST("/validate-recaptcha", handlers.ValidateRecaptchaHandler)
 
 	// Obtener puerto y mostrar información
 	port := config.GetPort()
